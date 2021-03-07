@@ -1,38 +1,32 @@
-
- 
- body {
-    margin:0 auto;
-    background-color:#e0e0e0;
-    height: 100%;
-     width: 100%;
-     
-  }
-  header{
-    background-color:rosybrown;
+#list_view{
+    scroll-behavior:smooth;
 }
-  #logo{
-      height:60px;
-      width: 60px;
-  }
-  section{
-      margin-left: 6px;
-      height:100%;
-      width: 100%;
-  }
 
-  .list{
+
+  .cityimg{
       margin:2%;
       background-color: rgb(132,136,139);
       width: 40%;
+      float:left;
   }
   .cityimage{
       height:250px;
       width:250px;
   }
-  .socialmedia{
-      height: 20px;
-      width:22px;
-  }
-  footer{
-    background-color:rosybrown;
-}
+ #mapview{
+     scroll-behavior: smooth;
+     display: none;
+ }
+ .view{
+     font-weight: bold;
+     text-decoration: none;
+     color: black;
+ } 
+ h3,p{
+     text-decoration: none;
+     color:black;
+ }
+
+
+
+ 
