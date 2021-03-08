@@ -1,12 +1,13 @@
+
 body,html{
   height: 100%;
   width: 100%;
   margin: 0%;
   background-color: #e0e0e0;
-  font-family: 'ubuntu' sans-serif;
+  font-family: 'Ubuntu',sans-serif;
 }
 header{
-  display:flex;
+  display: flex;
   background-color: rosybrown;
   position: fixed;
   width: 100%;
@@ -20,49 +21,52 @@ footer{
   position: fixed;
   width: 100%;
   bottom: 0;
-  height: 55px;
+  height: 60px;
   align-items: center;
 }
 
-#login{
+.loginStyle{
 right: 0%;
-margin-top: 20px;
+margin-top: 10px;
 margin-right: 2%;
 text-decoration: none;
 position: absolute;
 color: black;
+padding: -0.625rem .75rem;
 }
 
-#logo{
+.logo{
   height:60px;
   width:60px;
-  margin-left: 1%;
+ margin-left: 1%;
 }
 
-.socialmedia{
+.SocialMediaImage{
   height: 20px;
   width: 22px;
   text-decoration: none;
+
   
 }
 
-.icon{
+.iconsty{
   position: absolute;
   right:1%;
-  margin-right: 2%;
   bottom:32%;
+  margin-right: 2%;
 
 }
 .contactStyle{
-  bottom:32%;
-  margin-left: 1%;
+  bottom:20%;
+  margin-left: 4%;
   text-decoration: none;
   position: absolute;
- color: black;
+  color: black;
+ 
 }
 
-.copyright{
+.copyrightSty{
   font-size: 10px;
   text-align: center;
-  margin:auto;
+  margin: auto;
 }

@@ -1,105 +1,163 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>detail.html</title>
-        <link rel="stylesheet" href="styles/detail.css">
-        <link rel="stylesheet" href="styles/common.css">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div>
-            <header> 
-               
-                <a href="index.html"> <img id ="logo" src = "assests/images/logo.png" alt="logo" width="200" height="150"></a>
-                  <a href ="login.html" id="login">Login</a>
-                </br>
-                 </header>
-            <section>
-           
-
-        <div>
-            <div class="mainDiv">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+        <header>
+            <a href="index.html"><img src="assests\images\logo.png" alt="logo" class="logo" /></a>
+           <!-- <a href="login.html" target="_self" class="loginStyle">-->
+               <span class="loginStyle">
+                <button  type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#login" id="login-button" style="padding: -0.625rem .75rem;">LOGIN</button>
+            </span><br/>
+        </header>
+        <div class="Content">
+            <div class="container">
+            
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div id="image"><img class="d-block w-100" id="images1"width="250px"
+                        height="500px" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="First slide">
+                  </div></div>
+                  <div class="carousel-item">
+                    <div id="image"><img class="d-block w-100" id="images2" width="250px"
+                        height="500px" src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" alt="Second slide">
+                  </div></div>
+                  <div class="carousel-item">
+                    <div id="image"><img class="d-block w-100" id="images3" width="250px"
+                        height="500px" src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" alt="Third slide">
+                  </div></div>
+                </div>
+                <a class="carousel-control-prev"  href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next"  href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              
+            <div id="detail1"><form class="form">
+            <br/>Adult:<input type="number" placeholder="1" min="1" required>
+            <br/>Name:<input type="text"   required>
+            <br/>From date:<input type="date" id="date1" required>
+            <br/>To date:<input type="date" id="date2" required>
+            <br/>Total:<input type="number" readonly >
+            <br><input type="submit" value = "Book Now" id="Book now" type="button" class="btn btn-outline-success" formaction="payment.html">
+            </form></div></div>
+            <p><strong>Radisson Blu Hotel</strong></p>
+            <p>RATING</p>
+            <p><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span></p>
+            <p>AMENITIES</p>
+            <ul>
+                <li>Room Service</li>
+                <li>Resturant</li>
+                <li>Bussiness Center</li>
+                <li>Fitness Center</li>
+                <li>Pool</li>
+            </ul>
+            <p>DESCRIPTION</p>
+            <p>Radisson Blu is an international chain of hotels operated by Radisson Hotels.</p>
+        </div>
+        </div>    
+        <footer>
+            <!--<a href="contact.html" target="_self" class="contactStyle">-->
+            <span class="contactStyle"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#example-modal-signup" id="sign-up-button" >Contact Us</button>
+            </span>
+            <div class="iconsty">
+            <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
+                <img class="SocialMediaImage" src="assests\images\facebook.png" alt="Facebook" /></a>
+            <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
+                <img class="SocialMediaImage" src="assests/images/instagram.png" alt="Instagram"/>
+            </a>
+            <a href="https://twitter.com" target="_blank" style="text-decoration: none;">
+                <img  class="SocialMediaImage" src="assests/images/twitter.png" alt="Twitter "/>
+            </a></div><br/>
+            <p class="copyrightSty"> <span>&#169;</span>
+            2020 ROOM SEARCH PVT LTD</p>
+ 
+        </footer>
         
-            <div class="imgDiv">
-                <!-- margin-top: 7%; margin-left: 4%; margin-right: 4%;-->
-            <img style="height: 350px; width: 500px;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="Image"><br/>
+        
+        
+        <!--login-->
+         <div class="modal" tabindex="-1" role="dialog" id="login">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-header">Please Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="margin-left: 7%;  margin-right: 7%;">
+                  <p style="display: flex; float: left;">
+                      <label style="margin-right: 25%;" for="name">Username:</label><br/>
+                      <input type="text" id="name" placeholder="Enter Username" required/>
+                  </p>
+                  <p style="display: flex; float: left;">
+                      <label style="margin-right: 25%;" for="example-input-password">Password:</label><br/>
+                      <input type="password" id="example-input-password" placeholder="Enter Password" required autocomplete="off"/>
+                  </p>
+                 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary btn-sm" style="display: flex; margin: auto;">Login</button>
+                 
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="formDiv">
-                <!--margin-left: 4%; margin-right: 4%; margin-bottom: 1%;-->
-            <form style="display:flex; justify-content:space-around; flex-direction: column;" action="payment.html" method="GET" target="_self" autocomplete="off" >
-                
-                
-                <ul style="list-style-type: none;">
-                <li class="listSty">
-                <label class="labelSty" for="adult">Adults:</label>
-                <input class="inputSty" type="number" id="adult" name="adult" min="1" required autocomplete="off" value="1"><br/></li>
-
-                <li class="listSty" >
-                <label class="labelSty" for="name">Name:</label>
-                <input class="inputSty" type="text" id="name" name="name" required autocomplete="off"><br/></li>
-
-                <li class="listSty" >
-                <label class="labelSty" for="date1">From Date:</label>
-                <input class="inputSty" type="date" id="date1" name="date1" required autocomplete="off"/><br/></li>
-
-                <li class="listSty" >
-                <label class="labelSty" for="date2">To Date:</label>
-                <input class="inputSty" type="date" name="date2" id="date2" required autocomplete="off" /><br/></li>
-
-                <li class="listSty" >
-                <label class="labelSty" for="price">Total:</label>
-                <input class="inputSty" type="text" name="price" id="price" autocomplete="off" readonly/><br/></li>
-
-                <li style="display: flex; padding: 1em; justify-content: center;">
-                <a href="payment.html" target="_self">
-                <button style="padding:10px" id="bookNow">Book Now</button> </a></li></ul>
+ <!--contact modal-->
+ <div class="modal" tabindex="-1" role="dialog" id="example-modal-signup">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-header">Get in touch</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <p>Thank you for reaching out!!!<br/>
+                Please enter you email and we will get back to you</p>
+              <p style="display: flex; float: left;">
+                  <label for="email">Email:</label><br/>
+                  <input type="email" id="email" placeholder="Enter your email id" required/>
+              </p>
+             
             </form>
-            </div>
-            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-sm">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <div style="margin-left: 4%; margin-right: 4%; margin-top: -4%; margin-bottom: 7%;">
-            <h2>Radisson Blu Hotel</h2>
-            <span style="font-family:cursive;">  
-                <b>RATING</b> </br></br>
-                5 Star </br></br>
-              </span> 
-    
-              <span style="font-family:cursive;"> <b>AMENITIES </b></span>
-           <ul>
-               <li>Room Service</li>
-               <li>Restaurant</li>
-               <li>Business center</li>
-               <li>Fitness center</li>
-               <li>Pool</li>
-           </ul>
-           <div style="margin-bottom: 5%; position: absolute; padding-bottom: 6%;">
-           <h5 style="font-family:cursive;" >DESCRIPTION</h5>
-           <p>Lorem ipsum dolor sit amet consectetur adipising elit. Deleniti, illum totam magni volupatibus libero delectus nesciunt hie vel! Aperiam esse asperiores culpa, natus quam quis eum ex doloremque doloribus architecto!</p>
+
+
+
+
         </div>
-        </div>
-        </div>
-        
-            
-            </section>
-            
-            <footer>
-                <a href="E:\HOTEL_B00KING_WEBSITE_STARTER_CODE\contact.html" target="_self" class="contactStyle">Contact Us</a><br/>
-               <div class="icon">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img class="socialmedia" src="assests\images\facebook.png" alt="Facebook" />
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img class="socialmedia" src="assests/images/instagram.png" alt="Instagram"/>
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img  class="socialmedia" src="assests/images/twitter.png" alt="Twitter "/>
-                </a></div><br/>
-               <p class="copyright"> <span>&#169;</span>
-                2020 ROOM SEARCH PVT LTD</p>
-                
-            </footer>
-            
-        </div>
-    </body>
+</body>
 </html>
