@@ -1,29 +1,31 @@
 
 
-  #city{
-      background-color: rgb(132,136,139);
-      width:50%;
-      height:20%;
-      margin: 7% auto;
-      
+#marginDesc{
+    margin: 2%;
+}
 
-  }
-  .cityimage{
-      height:500px;
-      width:500px;
-  }
-  #information{
-      margin:2%;
-  }
-  #tariff{
-        margin:2%;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 1% 2%;
-        margin-left: 2%; 
-        margin-right: 2%; 
-        margin-top: 2%;
-        margin-bottom:2%;
+.imgDiv{
+    background-color: rgb(132,136,139); 
+    margin: 10% auto 2% auto; 
+    flex-direction: row;
+    display: flex;
+    width: 50%;
+}
 
-  }
- 
+.mainDiv{
+    margin-bottom: 100px; 
+    flex-direction: column;
+    display: flex;
+}
+
+.descSty{
+    display: flex; 
+    font-family: cursive; 
+    background-color:rosybrown; 
+    
+    border:1px solid black; 
+    border-radius: 5px; 
+    margin-right: 2%; 
+    margin-left: 2%;
+    
+}

@@ -8,6 +8,10 @@
       background-color: rgb(132,136,139);
       width: 40%;
       float:left;
+      display: flex;
+     justify-content: start;
+     
+     align-items: flex-start;
   }
   .cityimage{
       height:250px;
@@ -26,6 +30,7 @@
      text-decoration: none;
      color:black;
  }
+ 
 
 
 

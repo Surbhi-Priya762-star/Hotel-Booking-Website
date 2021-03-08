@@ -1,63 +1,68 @@
 body,html{
-    height: 100%;
-    width: 100%;
-    margin: 0%;
-    background-color: #e0e0e0;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  background-color: #e0e0e0;
+  font-family: 'ubuntu' sans-serif;
 }
 header{
-    background-color: rosybrown;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 80;
-    
+  display:flex;
+  background-color: rosybrown;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 80;
+  
 }
 footer{
-    background-color: rosybrown;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  display: flex;
+  background-color: rosybrown;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 55px;
+  align-items: center;
 }
 
 #login{
-  right: 0%;
-  margin-top: 20px;
-  margin-right: 1%;
-  text-decoration: none;
-  position: absolute;
-  color: black;
+right: 0%;
+margin-top: 20px;
+margin-right: 2%;
+text-decoration: none;
+position: absolute;
+color: black;
 }
 
 #logo{
-    height:60px;
-    width:60px;
-    margin: auto;
+  height:60px;
+  width:60px;
+  margin-left: 1%;
 }
 
 .socialmedia{
-    height: 20px;
-    width: 22px;
-    text-decoration: none;
-    
+  height: 20px;
+  width: 22px;
+  text-decoration: none;
+  
 }
 
 .icon{
-    position: absolute;
-    right:1%;
-    align-items: center;
-    bottom:32%;
+  position: absolute;
+  right:1%;
+  margin-right: 2%;
+  bottom:32%;
 
 }
 .contactStyle{
-    bottom:32%;
-    margin-left: 1%;
-    text-decoration: none;
-    position: absolute;
-    text-align: center;
-    color: black;
+  bottom:32%;
+  margin-left: 1%;
+  text-decoration: none;
+  position: absolute;
+ color: black;
 }
 
 .copyright{
-    font-size: 10px;
-    text-align: center;
+  font-size: 10px;
+  text-align: center;
+  margin:auto;
 }
